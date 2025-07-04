@@ -9,39 +9,51 @@ body {
   margin: 0;
 }
 #tv-container {
-  border: 5px solid #333;
-  padding: 20px;
-  background-color: #2b2b2b;
-  text-align: center;
-  width: 400px;
+  position: relative;
+  width: 800px;
+  height: 650px;
+}
+#tv-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 #screen {
-  background: #000;
-  height: 200px;
-  margin-bottom: 20px;
+  position: absolute;
+  top: 85px;
+  left: 100px;
+  width: 568px;
+  height: 345px;
+  background-color: black;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 #status-text {
   color: #adff2f;
   font-size: 1.2em;
 }
 #controls {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 30px;
+  align-items: center;
 }
-input[type="range"] {
-  width: 100%;
+#slider-track {
+  width: 600px;
 }
-button {
-  padding: 10px;
-  background-color: #444;
-  color: white;
-  border: none;
+#slider-knob {
+  position: absolute;
+  bottom: 95px;
+  left: 115px;
+  width: 30px;
   cursor: pointer;
 }
-button:hover {
-  background-color: #666;
+#skip-button, #pause-button {
+  width: 170px;
+  height: auto;
+  cursor: pointer;
 }
