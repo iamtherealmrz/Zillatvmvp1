@@ -1,0 +1,47 @@
+body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#tv-container {
+  border: 5px solid #333;
+  padding: 20px;
+  background-color: #2b2b2b;
+  text-align: center;
+  width: 400px;
+}
+#screen {
+  background: #000;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#status-text {
+  color: #adff2f;
+  font-size: 1.2em;
+}
+#controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input[type="range"] {
+  width: 100%;
+}
+button {
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #666;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zilla TV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="tv-container">
+    <div id="screen">
+      <p id="status-text">Loading...</p>
+    </div>
+    <div id="controls">
+      <label for="rancid-slider">RANCID-O-METER</label>
+      <input type="range" id="rancid-slider" min="0" max="1" step="1" />
+      <button id="skip-button">SKIP</button>
+    </div>
+  </div>
+  <audio id="audio-player" autoplay></audio>
+  <script src="main.js"></script>
+</body>
+</html>
